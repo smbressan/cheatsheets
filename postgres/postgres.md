@@ -18,3 +18,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO temaki_data_user;
 ```
 SELECT version();
 ```
+#### Future clause for a given user: 
+```
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO readaccess;
+```
