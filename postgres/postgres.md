@@ -22,3 +22,10 @@ SELECT version();
 ```
 ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO readaccess;
 ```
+#### More commands
+
+| Command  | Description  |
+|----------|--------------|
+|```\du```  | To list all users and their assign roles |
+|  | command 3 |
+|  | command 4 |
