@@ -27,5 +27,14 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO readaccess;
 | Command  | Description  |
 |----------|--------------|
 |```\du```  | To list all users and their assign roles |
-|  | command 3 |
-|  | command 4 |
+| ```\c dbname username``` | Switch connection to another DB |
+| ```\l``` | List available DBs |
+| ```\dt``` | List all tables in a DB |
+| ```\d table_name``` | Describe a table |
+| ```\dn``` | List available schema |
+| ```\df``` | List available functions |
+| ```\dv``` | List available views |
+| ```\g``` | Execute the previous command |
+| ```\s``` | Command history |
+| ```\i filename``` | Execute commands from a file |
+| ```\q``` | Quit |
