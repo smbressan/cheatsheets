@@ -2,6 +2,7 @@
  One SSH Keypair should be configured for one git config.
 
 1. Generate the SSH key
+
 ```ssh-keygen -t ed25519 -C "personal_email@example.com" -f ~/.ssh/<personal_key> ```
 
 2. Adding a passphrase
