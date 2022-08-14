@@ -1,13 +1,13 @@
 # Git config for multiple accounts: 
-### Rule: one SSH Keypair = one git config
+ One SSH Keypair should be configured for one git config.
 
-### 1. Generate the SSH key
-```ssh-keygen -t ed25519 -C "your_personal_email@example.com" -f ~/.ssh/<personal_key> ```
+1. Generate the SSH key
+```ssh-keygen -t ed25519 -C "personal_email@example.com" -f ~/.ssh/<personal_key> ```
 
 2. Adding a passphrase
 It's an optional step but it's useful if someone gain access to the computer. This way, the key's won't get compromised.
 
-```ssh-keygen -p -f ~/.ssh/<personnal_key>```
+```ssh-keygen -p -f ~/.ssh/<personal_key>```
 
 3. Tell ssh-agent
 We will use ssh-agent to securely save your passphrase. Make sure the ssh-agent is running and add your key (the -K option is to store the passphrase in your keychain, macOS only).
@@ -74,3 +74,5 @@ user = “pro_name”
 [core]
 sshCommand = “ssh -i ~/.ssh/<professional_key>”
 ```
+
+#### reference: https://res.cloudinary.com/da8kiytlc/image/upload/v1647871440/Cheatsheets/GitGuardian_GitHub_Accounts_Cheatsheet.pdf
